@@ -1,0 +1,6 @@
+import './index.css';
+import './reset.css';
+
+const App = () => <h1>Hello, world!</h1>;
+
+export default App;

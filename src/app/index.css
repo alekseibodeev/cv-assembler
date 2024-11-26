@@ -1,0 +1,157 @@
+@font-face {
+  font-family: Roboto;
+  src:
+    url('../assets/fonts/roboto-regular-webfont.woff2') format('woff2'),
+    url('../assets/fonts/roboto-regular-webfont.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Roboto;
+  src:
+    url('../assets/fonts/roboto-medium-webfont.woff2') format('woff2'),
+    url('../assets/fonts/roboto-medium-webfont.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Roboto;
+  src:
+    url('../assets/fonts/roboto-black-webfont.woff2') format('woff2'),
+    url('../assets/fonts/roboto-black-webfont.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+}
+
+:root {
+  --clr-transparent: transparent;
+  --clr-black: #000;
+  --clr-white: #fff;
+
+  --clr-gray-100: #f7fafc;
+  --clr-gray-200: #edf2f7;
+  --clr-gray-300: #e2e8f0;
+  --clr-gray-400: #cbd5e0;
+  --clr-gray-500: #a0aec0;
+  --clr-gray-600: #718096;
+  --clr-gray-700: #4a5568;
+  --clr-gray-800: #2d3748;
+  --clr-gray-900: #1a202c;
+
+  --clr-red-100: #fff5f5;
+  --clr-red-200: #fed7d7;
+  --clr-red-300: #feb2b2;
+  --clr-red-400: #fc8181;
+  --clr-red-500: #f56565;
+  --clr-red-600: #e53e3e;
+  --clr-red-700: #c53030;
+  --clr-red-800: #9b2c2c;
+  --clr-red-900: #742a2a;
+
+  --clr-orange-100: #fffaf0;
+  --clr-orange-200: #feebc8;
+  --clr-orange-300: #fbd38d;
+  --clr-orange-400: #f6ad55;
+  --clr-orange-500: #ed8936;
+  --clr-orange-600: #dd6b20;
+  --clr-orange-700: #c05621;
+  --clr-orange-800: #9c4221;
+  --clr-orange-900: #7b341e;
+
+  --clr-yellow-100: #fffff0;
+  --clr-yellow-200: #fefcbf;
+  --clr-yellow-300: #faf089;
+  --clr-yellow-400: #f6e05e;
+  --clr-yellow-500: #ecc94b;
+  --clr-yellow-600: #d69e2e;
+  --clr-yellow-700: #b7791f;
+  --clr-yellow-800: #975a16;
+  --clr-yellow-900: #744210;
+
+  --clr-green-100: #f0fff4;
+  --clr-green-200: #c6f6d5;
+  --clr-green-300: #9ae6b4;
+  --clr-green-400: #68d391;
+  --clr-green-500: #48bb78;
+  --clr-green-600: #38a169;
+  --clr-green-700: #2f855a;
+  --clr-green-800: #276749;
+  --clr-green-900: #22543d;
+
+  --clr-teal-100: #e6fffa;
+  --clr-teal-200: #b2f5ea;
+  --clr-teal-300: #81e6d9;
+  --clr-teal-400: #4fd1c5;
+  --clr-teal-500: #38b2ac;
+  --clr-teal-600: #319795;
+  --clr-teal-700: #2c7a7b;
+  --clr-teal-800: #285e61;
+  --clr-teal-900: #234e52;
+
+  --clr-blue-100: #ebf8ff;
+  --clr-blue-200: #bee3f8;
+  --clr-blue-300: #90cdf4;
+  --clr-blue-400: #63b3ed;
+  --clr-blue-500: #4299e1;
+  --clr-blue-600: #3182ce;
+  --clr-blue-700: #2b6cb0;
+  --clr-blue-800: #2c5282;
+  --clr-blue-900: #2a4365;
+
+  --clr-indigo-100: #ebf4ff;
+  --clr-indigo-200: #c3dafe;
+  --clr-indigo-300: #a3bffa;
+  --clr-indigo-400: #7f9cf5;
+  --clr-indigo-500: #667eea;
+  --clr-indigo-600: #5a67d8;
+  --clr-indigo-700: #4c51bf;
+  --clr-indigo-800: #434190;
+  --clr-indigo-900: #3c366b;
+
+  --clr-purple-100: #faf5ff;
+  --clr-purple-200: #e9d8fd;
+  --clr-purple-300: #d6bcfa;
+  --clr-purple-400: #b794f4;
+  --clr-purple-500: #9f7aea;
+  --clr-purple-600: #805ad5;
+  --clr-purple-700: #6b46c1;
+  --clr-purple-800: #553c9a;
+  --clr-purple-900: #44337a;
+
+  --clr-pink-100: #fff5f7;
+  --clr-pink-200: #fed7e2;
+  --clr-pink-300: #fbb6ce;
+  --clr-pink-400: #f687b3;
+  --clr-pink-500: #ed64a6;
+  --clr-pink-600: #d53f8c;
+  --clr-pink-700: #b83280;
+  --clr-pink-800: #97266d;
+  --clr-pink-900: #702459;
+
+  --size-100: 0.25rem;
+  --size-200: 0.5rem;
+  --size-300: 0.75rem;
+  --size-400: 1rem;
+  --size-500: 1.25rem;
+  --size-600: 1.5rem;
+  --size-800: 1.75rem;
+  --size-900: 2rem;
+  --size-1000: 2.25rem;
+  --size-1100: 2.5rem;
+
+  --ff-sans: Roboto, system-ui, sans-serif;
+
+  --fw-regular: 400;
+  --fw-normal: 500;
+  --fw-bold: 900;
+}
+
+body {
+  font-family: var(--ff-sans);
+  font-size: var(--size-400);
+  font-weight: var(--fw-regular);
+  color: var(--clr-gray-900);
+  background-color: var(--clr-gray-300);
+}
