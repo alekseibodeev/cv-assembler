@@ -1,0 +1,20 @@
+.input {
+  color: var(--input-clr, var(--clr-gray-900));
+  background-color: var(--input-clr-bg, var(--clr-white));
+  border-color: var(--input-border-clr, var(--clr-gray-500));
+  border-width: var(--size-50);
+  border-style: solid;
+  border-radius: var(--size-100);
+  padding: var(--size-200) var(--size-600);
+
+  &::placeholder {
+    color: var(--clr-gray-500);
+  }
+
+  &:focus-visible {
+    border-color: var(--clr-gray-900);
+    border-width: var(--size-50);
+    border-style: solid;
+    outline: none;
+  }
+}
