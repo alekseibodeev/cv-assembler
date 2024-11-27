@@ -1,0 +1,22 @@
+.fieldset {
+  position: relative;
+  border-color: var(--clr-gray-500);
+  border-width: var(--size-50);
+  border-style: solid;
+  border-radius: var(--size-100);
+  padding: var(--size-400);
+  padding-top: var(--size-500);
+  margin-top: 1em;
+  display: grid;
+  gap: var(--size-200);
+}
+
+.legend {
+  position: absolute;
+  top: -1em;
+  left: 1em;
+  color: var(--clr-gray-100);
+  background-color: var(--clr-gray-900);
+  border-radius: var(--size-100);
+  padding: var(--size-100) var(--size-200);
+}
