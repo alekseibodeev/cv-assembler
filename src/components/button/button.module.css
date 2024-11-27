@@ -1,0 +1,22 @@
+.base {
+  color: var(--button-clr, var(--clr-gray-100));
+  background-color: var(--button-clr-bg, var(--clr-gray-900));
+  font-weight: var(--fw-bold);
+  border-color: var(
+    --button-border-clr,
+    var(--button-clr-bg, var(--clr-gray-900))
+  );
+  border-width: var(--size-50);
+  border-style: solid;
+  border-radius: var(--size-100);
+  padding: var(--size-200);
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5em;
+  cursor: pointer;
+
+  &:hover {
+    --button-clr-bg: var(--clr-gray-800);
+  }
+}
