@@ -130,10 +130,12 @@
   --clr-pink-800: #97266d;
   --clr-pink-900: #702459;
 
+  --size-50: 0.125rem;
   --size-100: 0.25rem;
   --size-200: 0.5rem;
   --size-300: 0.75rem;
   --size-400: 1rem;
+  --size-450: 1.125rem;
   --size-500: 1.25rem;
   --size-600: 1.5rem;
   --size-800: 1.75rem;
