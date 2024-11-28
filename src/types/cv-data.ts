@@ -1,6 +1,6 @@
 export type CVData = {
   name: string;
-  phoneNumber: string;
+  phone: string;
   city: string;
   state: string;
   zip: string;
@@ -13,24 +13,24 @@ export type CVData = {
   professionalSummary: string;
   skills: {
     id: string;
-    skillSummary: string;
-    listOfSkills: string;
+    summary: string;
+    list: string;
   }[];
   experience: {
     id: string;
     company: string;
     location: string;
-    jobTitle: string;
+    title: string;
     startDate: string;
     endDate: string;
     accomplishments: string;
   }[];
   education: {
     id: string;
-    degreeName: string;
-    yearOfGraduation: string;
-    universityName: string;
-    universityLocation: string;
+    degree: string;
+    year: string;
+    name: string;
+    location: string;
     gpa: string;
     achievements: string;
   }[];

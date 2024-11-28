@@ -11,7 +11,7 @@ export const CVContext = createContext<CVContext | null>(null);
 
 const initialData: CVData = {
   name: '',
-  phoneNumber: '',
+  phone: '',
   city: '',
   state: '',
   zip: '',
