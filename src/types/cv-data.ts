@@ -5,14 +5,19 @@ export type CVData = {
   state: string;
   zip: string;
   email: string;
-  links: string[];
+  links: {
+    id: string;
+    url: string;
+  }[];
   headline: string;
   professionalSummary: string;
   skills: {
+    id: string;
     skillSummary: string;
     listOfSkills: string;
   }[];
   experience: {
+    id: string;
     company: string;
     location: string;
     jobTitle: string;
@@ -21,6 +26,7 @@ export type CVData = {
     accomplishments: string;
   }[];
   education: {
+    id: string;
     degreeName: string;
     yearOfGraduation: string;
     universityName: string;
@@ -29,11 +35,13 @@ export type CVData = {
     achievements: string;
   }[];
   projects: {
+    id: string;
     title: string;
     link: string;
     description: string;
   }[];
   awards: {
+    id: string;
     year: string;
     quantification: string;
     competition: string;
