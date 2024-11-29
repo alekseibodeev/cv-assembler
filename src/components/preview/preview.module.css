@@ -1,0 +1,37 @@
+.preview {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.8125rem;
+  font-weight: normal;
+  color: black;
+  background-color: white;
+  width: 42rem;
+  aspect-ratio: 210 / 297;
+  padding: 2rem;
+  overflow: hidden;
+  display: grid;
+  gap: 0.5rem;
+
+  & ul:not([role='list']) > li {
+    margin-inline-start: 1rem;
+  }
+
+  & h1 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  & h2 {
+    font-size: 1.125rem;
+    font-weight: bold;
+  }
+
+  & hr {
+    border-color: black;
+    border-style: solid;
+  }
+}
+
+.contacts {
+  text-align: center;
+}
