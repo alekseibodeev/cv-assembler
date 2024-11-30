@@ -1,0 +1,16 @@
+.a {
+  color: var(--gray-900);
+  font-size: var(--size-500);
+  font-weight: var(--fw-normal);
+  text-decoration: none;
+  border-radius: var(--size-100);
+  padding: var(--size-200);
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5em;
+
+  &:hover {
+    background-color: var(--clr-gray-200);
+  }
+}
