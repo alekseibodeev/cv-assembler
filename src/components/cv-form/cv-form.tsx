@@ -1,4 +1,4 @@
-import { PlusSquare, Trash2 } from 'lucide-react';
+import { BookText, Eraser, PlusSquare, Trash2 } from 'lucide-react';
 
 import Accordion from '@/components/accordion';
 import Button from '@/components/button';
@@ -13,15 +13,27 @@ import VisuallyHidden from '@/components/visually-hidden';
 
 import useCV from '@/hooks/use-cv';
 
+import styles from './cv-form.module.css';
+
 // TODO: ? Split form to multiple semantic blocks ?
 
 const CVForm = () => {
-  const { data, updateData } = useCV();
+  const { data, updateData, resetData, loadExampleData } = useCV();
 
   // TODO: Write event handlers abstractions
 
   return (
-    <form>
+    <form className={styles.form}>
+      <div className={styles.controls}>
+        <Button type="button" onClick={() => resetData()}>
+          Reset
+          <Eraser />
+        </Button>
+        <Button type="button" onClick={() => loadExampleData()}>
+          Example
+          <BookText />
+        </Button>
+      </div>
       <Accordion>
         <Accordion.Item value="1">
           <Accordion.Header>Contact Information</Accordion.Header>
